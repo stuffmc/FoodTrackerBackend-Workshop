@@ -1,0 +1,3 @@
+framework module Generated {
+    header "Generated-Swift.h"
+}

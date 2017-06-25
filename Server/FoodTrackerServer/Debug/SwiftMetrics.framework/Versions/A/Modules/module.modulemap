@@ -1,0 +1,3 @@
+framework module SwiftMetrics {
+    header "SwiftMetrics-Swift.h"
+}

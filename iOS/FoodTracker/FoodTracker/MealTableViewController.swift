@@ -188,9 +188,9 @@ class MealTableViewController: UITableViewController {
     
     private func saveMeals() {
         // Additonal code to enable saving the Meal model data to the server
-        // for meal in meals {
-        //     saveToServer(meal: meal)
-        // }
+        for meal in meals {
+            saveToServer(meal: meal)
+        }
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(meals, toFile: Meal.ArchiveURL.path)
         if isSuccessfulSave {
             os_log("Meals successfully saved.", log: OSLog.default, type: .debug)

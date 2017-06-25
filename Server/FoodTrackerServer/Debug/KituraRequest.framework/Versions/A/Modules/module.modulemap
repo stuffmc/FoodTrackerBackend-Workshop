@@ -1,0 +1,3 @@
+framework module KituraRequest {
+    header "KituraRequest-Swift.h"
+}

@@ -1,0 +1,12 @@
+applications:
+- name: FoodTrackerServer
+  random-route: true
+  memory: 128M
+  instances: 1
+  disk_quota: 1024M
+  buildpack: swift_buildpack
+  command: FoodTrackerServer --bind 0.0.0.0:$PORT
+  env:
+    OPENAPI_SPEC: "/swagger/api"
+  - FoodTrackerServer-AutoScaling-v2a5
+  timeout: 180

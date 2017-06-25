@@ -1,0 +1,3 @@
+framework module Cryptor {
+    header "Cryptor-Swift.h"
+}
